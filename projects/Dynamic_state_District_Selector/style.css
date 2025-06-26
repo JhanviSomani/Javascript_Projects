@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  align-items: start;
+  background-color: #1d1e22;
+}
+select {
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 5px;
+}

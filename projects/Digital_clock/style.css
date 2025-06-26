@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #1e1e1e;
+  --text-color: #00ffff;
+  --date-color: #bbbbbb;
+  --button-bg: #333;
+  --button-text: #fff;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.clock-container {
+  background-color: #111;
+  padding: 40px 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#clock {
+  color: var(--text-color);
+  font-size: 3rem;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+#date {
+  color: var(--date-color);
+  margin-top: 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+#toggleMode {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+body.light-mode {
+  --bg-color: #f4f4f4;
+  --text-color: #111;
+  --date-color: #444;
+  --button-bg: #ddd;
+  --button-text: #111;
+}
+
+/* Fix: Change clock-container bg and shadow in light mode */
+body.light-mode .clock-container {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
